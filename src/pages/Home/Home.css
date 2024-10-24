@@ -1,0 +1,88 @@
+.home-container { 
+  max-width: 900px; /* จำกัดความกว้างสูงสุด */
+  margin: 0 auto; /* จัดกลางหน้าจอ */
+  padding: 20px; /* เพิ่มระยะห่างรอบๆ */
+  font-family: 'Poppins', sans-serif; /* กำหนดฟอนต์ */
+  background: linear-gradient(135deg, #bed7ff 0%, #94b1ff 100%); /* พื้นหลังแบบเกรเดียนต์ */
+  border-radius: 20px; /* มุมมน */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* เงา */
+  color: #333; /* สีตัวอักษร */
+  text-align: left; /* จัดข้อความให้ชิดซ้าย */
+}
+
+.profile {
+  display: flex; /* ใช้ flexbox เพื่อจัดวางรูปภาพและรายละเอียด */
+  align-items: flex-start; /* จัดให้ชิดด้านบน */
+  margin-bottom: 30px; /* ระยะห่างด้านล่าง */
+  background-color: #ffffff; /* พื้นหลังของโปรไฟล์ */
+  padding: 20px; /* เพิ่มระยะห่างรอบๆ */
+  border-radius: 20px; /* มุมมน */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* เงา */
+}
+
+.profile-image {
+  width: 160px; /* ขนาดรูปภาพ */
+  height: 160px; /* ขนาดรูปภาพ */
+  border-radius: 50%; /* ให้เป็นรูปวงกลม */
+  object-fit: cover; /* ปรับขนาดให้พอดี */
+  margin-right: 20px; /* ระยะห่างด้านขวา */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* เงารอบรูปภาพ */
+}
+
+.profile-details {
+  flex-grow: 1; /* ให้รายละเอียดขยายเต็มพื้นที่ที่เหลือ */
+}
+
+h1 {
+  text-align: left; /* จัดให้ชิดซ้าย */
+  color: #000000; /* สีหัวข้อหลัก */
+  font-size: 36px; /* ขนาดตัวอักษร */
+  margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+
+h2 {
+  color: #516fc4; /* สีหัวข้อรอง */
+  font-size: 28px; /* ขนาดตัวอักษร */
+}
+
+h3 {
+  color: #516fc4; /* สีหัวข้อรอง */
+  font-size: 24px; /* ขนาดตัวอักษร */
+  margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+}
+
+p, ul li {
+  font-size: 18px; /* ขนาดตัวอักษร */
+}
+
+ul {
+  list-style-type: none; /* ลบจุดหน้าหมายเลข */
+  padding: 0; /* ลบการ padding */
+}
+
+ul li {
+  background-color: #516fc4; /* พื้นหลังของรายการ */
+  color: #fff; /* สีตัวอักษร */
+  margin: 8px 0; /* ระยะห่างด้านบนและล่าง */
+  padding: 10px 15px; /* เพิ่มระยะห่างภายใน */
+  border-radius: 10px; /* มุมมน */
+  font-size: 16px; /* ขนาดตัวอักษร */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); /* เงา */
+}
+
+.education, .experience, .skills, .projects, .interests, .contact {
+  background-color: #ffffff; /* พื้นหลังของส่วนต่างๆ */
+  padding: 20px; /* เพิ่มระยะห่างรอบๆ */
+  border-radius: 20px; /* มุมมน */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* เงา */
+  margin-bottom: 30px; /* ระยะห่างด้านล่าง */
+  color: #333; /* สีตัวอักษร */
+}
+
+.contact p, .interests p {
+  font-size: 18px; /* ขนาดตัวอักษร */
+}
+
+.contact strong, .interests strong {
+  color: #1e3a8a; /* สีตัวหนา */
+}

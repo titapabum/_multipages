@@ -1,0 +1,5 @@
+.layout-container {
+    display: flex;
+    flex-direction: column; /* ทำให้จัดเรียงในแนวตั้ง */
+    align-items: center; /* จัดกลางในแนวนอน */
+}

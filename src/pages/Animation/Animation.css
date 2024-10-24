@@ -1,0 +1,50 @@
+.animation-container {
+    border: 1px solid black;
+    margin: 10px auto;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.field {
+    position: relative; /* คอนเทนเนอร์หลักต้องเป็น relative */
+    border: 1px solid red;
+    border-radius: 5px;
+    margin: 10px;
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNDUxLWJnLTA2LmpwZw.jpg');
+    background-position: center;
+    height: 400px;
+    width: 700px;
+    display: block;
+}
+
+.control {
+    margin: 10px;
+}
+
+.ball {
+    position: absolute; /* ลูกบอลต้องมีตำแหน่งแบบ absolute */
+    border: 1px solid green;
+    border-radius: 50%;
+    background-color: aliceblue;
+    background-size: cover; /* ทำให้รูปภาพเติมเต็มวงกลม */
+    background-position: center; /* จัดตำแหน่งภาพให้อยู่ตรงกลาง */
+    background-repeat: no-repeat; /* ป้องกันการซ้ำของรูป */
+    height: 150px;
+    width: 150px;
+    top: 125px; /* ปรับตำแหน่งแนวตั้ง */
+    left: 0;    /* ลูกบอลเริ่มที่ด้านซ้าย */
+}
+
+
+@keyframes moveBall {
+    from {
+        left: 0;
+    }
+    to {
+        left: 650px; /* ลูกบอลจะเคลื่อนไปทางขวาสุดของคอนเทนเนอร์ */
+    }
+}
+
+.ball.move {
+    animation: moveBall 2s linear infinite;
+}
